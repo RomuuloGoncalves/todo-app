@@ -1,0 +1,127 @@
+@import url(https://fonts.google.com/specimen/Josefin+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(235, 21%, 11%);
+    display: flex;
+    justify-content: center;
+}
+
+.background__img {
+    background-image: url("../images/bg-desktop-dark.jpg");
+    height: 30vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    position: absolute;
+    min-height: 70vh;
+    width: 60%;
+    z-index: 2;
+    top: 10vh;
+
+}
+
+.title {
+    color: #ffff;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+
+}
+
+.title h1 {
+    width: 90%;
+    margin: auto;
+}
+
+.campo__input {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.input__add,
+.campo {
+    width: 90%;
+    padding: 20px;
+    background-color: hsl(235, 24%, 19%);
+    color: #ffff;
+    font-size: 1.2rem;
+
+}
+
+.input__add {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.atividades {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.campo {
+    display: flex;
+    justify-content: start;
+    gap: 6px;
+    border-bottom: 1px solid #545353bd;
+}
+
+.campo input {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    color: gray;
+    background-color: hsl(235, 24%, 19%);
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+}
+
+
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+.links{
+    padding: 1px;
+    cursor: pointer;
+}
+.links:hover{
+    color: rgb(28, 28, 150);
+}
+input[type=checkbox]:checked ~ label {
+    text-decoration: line-through;
+ }
+@media(max-width: 700px) {
+    main {
+        width: 90%;
+    }
+}
